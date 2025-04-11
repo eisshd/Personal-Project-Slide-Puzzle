@@ -1,0 +1,26 @@
+.slide_puzzle {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    margin-left: 20%;
+    margin-right: 46.5%;
+}
+
+.slide_puzzle div {
+    display: flex;
+    background-color: red;
+    border: 4px solid black;
+    justify-content: space-around;
+    padding-top: 35%;
+}
+
+.block_button {
+    display: flex;
+    opacity: 50%;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+}
+
+
+
