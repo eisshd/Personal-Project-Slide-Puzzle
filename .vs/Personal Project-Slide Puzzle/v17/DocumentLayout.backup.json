@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\components\\Slide_Puzzle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\components\\Slide_Puzzle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\styles\\Slide_Puzzle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +28,22 @@
               "RelativeDocumentMoniker": "frontend\\components\\Slide_Puzzle.js",
               "ToolTip": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\components\\Slide_Puzzle.js",
               "RelativeToolTip": "frontend\\components\\Slide_Puzzle.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-11T01:59:05.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Slide_Puzzle.css",
+              "DocumentMoniker": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css",
+              "RelativeDocumentMoniker": "frontend\\styles\\Slide_Puzzle.css",
+              "ToolTip": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css*",
+              "RelativeToolTip": "frontend\\styles\\Slide_Puzzle.css*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-12T01:45:50.265Z",
               "EditorCaption": ""
             }
           ]

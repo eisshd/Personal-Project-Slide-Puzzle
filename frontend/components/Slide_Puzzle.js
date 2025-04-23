@@ -1,5 +1,5 @@
 import '../styles/Slide_Puzzle.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 
 //Slide Puzzle will be composed of an array of nine values the ninth will be hidden by default.
@@ -17,50 +17,99 @@ import React, {useState} from 'react';
 
 //message that'll say you win
 const initialMessage = ''
-const initialIndex = 8 // the index the "B" is at
 
 function App() {
-  const [message, setMessage] = useState(initialMessage)
-  const [boxOneP, setBoxOneP] = useState()
-  const arrayofGrid = [1,1,1,
-                       1,1,1,
-                       1,1,0
-  ]
+  // const [message, setMessage] = useState(initialMessage)
+  const [boxOneR, setBoxOneR] = useState()
+  var arrayofGrid = [ 1,9,3,
+                      4,5,6,
+                      7,8,2]
+  var arrayBoxOne = arrayofGrid[0]
+  var arrayBoxTwo = arrayofGrid[1]
+  // var arrayBoxThree = arrayofGrid[2]
+  var arrayBoxFour = arrayofGrid[3]
+  // var arrayBoxFive = arrayofGrid[4]
+  // var arrayBoxSix = arrayofGrid[5]
+  // var arrayBoxSeven = arrayofGrid[6]
+  // var arrayBoxEight = arrayofGrid[7]
+  // var arrayBoxNine = arrayofGrid[8]
 
-  const [xOffset, setXOffset] = useState(0)
-  const [yOffset, setYOffset] = useState(0)
-  const [index, setIndex] = useState(initialIndex)
+  var boxP = useRef([])
+  function pushRef(el){if(el){boxP.current.push(el)}}
   
-    function moveLeft(evt){
-      setXOffset(xOffset - 100)
-    };
-  
-    function moveRight(evt){
-      setXOffset(xOffset + 100)
-    };
-  
-    function moveUp(evt){
-    };
-  
-    function moveDown(evt){
-      setYOffset(yOffset - 100)
-    };
 
-  
+  function moveBoxOne(){
+    if(arrayBoxTwo === 9){
+        arrayBoxOne = 9
+        arrayBoxTwo = 1
+    }
+    if(arrayBoxFour === 9){
+        arrayBoxOne = 9
+        arrayBoxFour = 1
+    }
+    console.log(boxOneR.x)
+  }
+
+  useEffect(() => {
+    if (boxP.current){
+      setBoxOneR(boxP.current[0].getBoundingClientRect())
+      console.log("boxP.current[0].getBoundingClientRect(): ", boxP.current[0].getBoundingClientRect())
+    } else {
+      console.log("boxOneP element not avail")
+    }
+  }, [])
+
+
   return (
     <div className="App">
       <header className="header">Slide Puzzle</header>
-        <div className='slide_puzzle'>
-          <div className='block_one' onClick={moveDown} style={{transform: `translate(${xOffset}%)`}}></div>
-          <div className='block_two'></div>
-          <div className='block_three'></div>
-          <div className='block_four'></div>
-          <div className='block_five'></div>
-          <div className='block_six'></div>
-          <div className='block_seven'></div>
-          <div className='block_eight'></div>
-          <div className='block_nine'></div>
-      </div>
+        <div className='slide_puzzle_grid'>
+          <div className='grid' id='grid_one' style={{backgroundColor: 'white'}}>
+            <div className='box' id='box_one' ref={pushRef} onClick={() => {moveBoxOne()}} style={{transform: `translate: ${boxOneR}, ${boxOneR}`, backgroundColor: 'white'}}>
+              {arrayBoxOne}
+            </div>
+          </div>
+          <div className='grid' id='grid_two' style={{backgroundColor: 'white'}}>
+            <div className='box' id='box_two' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayBoxTwo}
+            </div>
+          </div>
+          <div className='grid'id='grid_three' style={{backgroundColor: 'white'}} >
+            <div className='box' id='box_three' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[2]}
+            </div>
+          </div>
+          <div className='grid' id='grid_four' style={{backgroundColor: 'white'}}>
+            <div className='box' id='box_four' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[3]}
+            </div>                       
+          </div>
+          <div className='grid'id='grid_five'style={{backgroundColor: 'white'}}>
+            <div className='box' id='box_five' ref={pushRef}  onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[4]}
+            </div>            
+          </div>
+          <div className='grid' id='grid_six'style={{backgroundColor: 'white'}}>
+            <div className='box' id='box_six' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[5]}
+            </div>          
+          </div>
+          <div className='grid' id='grid_seven' style={{backgroundColor: 'white'}}>
+          <div className='box' id='box_seven' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[6]}
+            </div>          
+          </div>
+          <div className='grid'id='grid_eight'style={{backgroundColor: 'white'}}>
+          <div className='box' id='box_eight' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[7]}
+            </div>           
+          </div>
+          <div className='grid'id='grid_nine'style={{backgroundColor: 'white'}}>
+          <div className='box' id='box_nine' ref={pushRef} onClick={() => {}} style={{backgroundColor: 'white'}}>
+              {arrayofGrid[8]}
+            </div>          
+          </div>
+        </div>
     </div>
   );
 }
