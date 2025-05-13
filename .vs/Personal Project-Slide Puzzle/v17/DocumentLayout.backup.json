@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "frontend\\components\\Slide_Puzzle.js",
               "ToolTip": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\components\\Slide_Puzzle.js",
               "RelativeToolTip": "frontend\\components\\Slide_Puzzle.js",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-11T01:59:05.76Z",
               "EditorCaption": ""
@@ -39,12 +43,11 @@
               "Title": "Slide_Puzzle.css",
               "DocumentMoniker": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css",
               "RelativeDocumentMoniker": "frontend\\styles\\Slide_Puzzle.css",
-              "ToolTip": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css*",
-              "RelativeToolTip": "frontend\\styles\\Slide_Puzzle.css*",
+              "ToolTip": "C:\\Users\\iceei\\Documents\\School\\BloomTech\\React Project\\Personal Project-Slide Puzzle\\frontend\\styles\\Slide_Puzzle.css",
+              "RelativeToolTip": "frontend\\styles\\Slide_Puzzle.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-12T01:45:50.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T01:45:50.265Z"
             }
           ]
         }

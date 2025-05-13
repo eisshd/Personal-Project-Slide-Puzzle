@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\frontend",
+    "\\frontend\\components"
   ],
   "PreviewInSolutionExplorer": false
 }
